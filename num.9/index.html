@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Payment Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Product Payment Calculator</h2>
+        <label for="price">Enter the product price (in $):</label>
+        <input type="number" id="price" step="0.01" required>
+        <label for="paymentCondition">Select the payment condition:</label>
+        <select id="paymentCondition" required>
+            <option value="">Select</option>
+            <option value="a">À vista em dinheiro ou cheque - 10% de desconto</option>
+            <option value="b">À vista no cartão de crédito - 15% de desconto</option>
+            <option value="c">Em duas vezes - Preço normal de etiqueta sem juros</option>
+            <option value="d">Em duas vezes - Preço normal de etiqueta mais juros de 10%</option>
+        </select>
+        <button onclick="calculatePayment()">Calculate Payment</button>
+        <p id="result"></p>
+    </div>
+</body>
+<script src="script.js" defer></script>
+</html>

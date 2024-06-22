@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Bar Order Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Snack Bar Order Calculator</h2>
+        <label for="itemCode">Enter the item code:</label>
+        <input type="number" id="itemCode" required>
+        <label for="quantity">Enter the quantity:</label>
+        <input type="number" id="quantity" required>
+        <button onclick="calculateTotal()">Calculate Total</button>
+        <p id="result"></p>
+
+        <h3>Menu</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Item</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>100</td>
+                    <td>Hot Dog</td>
+                    <td>$2.50</td>
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>Cheeseburger</td>
+                    <td>$3.00</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Fries</td>
+                    <td>$2.00</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Soda</td>
+                    <td>$1.50</td>
+                </tr>
+                <tr>
+                    <td>104</td>
+                    <td>Milkshake</td>
+                    <td>$3.50</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="script.js" defer></script>
+</html>  

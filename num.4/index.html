@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Transferência de Veículos</title>
+</head>
+<body>
+    <h2>Calculadora de Transferência de Veículos</h2>
+    <form id="carForm">
+        <div>
+            <label for="ano">Ano de Fabricação:</label>
+            <input type="number" id="ano" name="ano" required>
+        </div>
+        <div>
+            <label for="valor">Valor de Tabela (R$):</label>
+            <input type="number" id="valor" name="valor" required>
+        </div>
+        <button type="button" onclick="calcularImposto()">Calcular Imposto</button>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
